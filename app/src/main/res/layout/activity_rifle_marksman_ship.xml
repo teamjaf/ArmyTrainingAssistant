@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".layouts.Recruit.RifleMarksmanShip">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/appBar"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        app:cardBackgroundColor="@color/green2"
+        app:cardCornerRadius="0dp"
+        app:cardElevation="5dp">
+
+        <ImageButton
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="10dp"
+            android:background="@android:color/transparent"
+            android:onClick="btn_back"
+            android:src="@drawable/ic_back" />
+
+        <TextView
+            android:id="@+id/txt_screenName"
+            android:layout_width="200dp"
+            android:layout_marginStart="15dp"
+            app:autoSizeMaxTextSize="30sp"
+            app:autoSizeMinTextSize="10sp"
+            app:autoSizeTextType="uniform"
+            android:layout_height="28dp"
+             android:layout_gravity="center"
+            android:fontFamily="@font/poppins_bold"
+            android:text="Rifle Marksmanship"
+            android:textAlignment="center"
+            android:textColor="@android:color/white" />
+
+    </androidx.cardview.widget.CardView>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/appBar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+                android:id="@+id/youtube_player_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:autoPlay="false"
+                app:enableAutomaticInitialization="true"
+                app:showYouTubeButton="false"
+                app:showVideoDuration="true"
+                app:showSeekBar="true"
+
+                android:layout_marginTop="20dp"
+
+                app:showFullScreenButton="false"/>
+
+            <Button
+
+                android:textAllCaps="false"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:layout_gravity="center"
+                android:background="@drawable/btn_shape"
+                android:fontFamily="@font/poppins_semibold"
+                android:onClick="btn_4Fundamentals"
+                android:padding="8dp"
+                android:text="4 Fundamentals of Marksmanship"
+                android:textColor="@color/black_dark2"
+                app:autoSizeMaxTextSize="30sp"
+                app:autoSizeMinTextSize="10sp"
+                app:autoSizeTextType="uniform" />
+            <Button
+                android:textAllCaps="false"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:layout_gravity="center"
+                android:background="@drawable/btn_shape"
+                android:fontFamily="@font/poppins_semibold"
+                android:onClick="btn_8CycleFunction"
+                android:padding="8dp"
+                android:text="8 Cycles of function"
+                android:textColor="@color/black_dark2"
+                app:autoSizeMaxTextSize="30sp"
+                app:autoSizeMinTextSize="10sp"
+                app:autoSizeTextType="uniform" />
+            <Button
+                android:textAllCaps="false"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:layout_gravity="center"
+                android:background="@drawable/btn_shape"
+                android:fontFamily="@font/poppins_semibold"
+                android:onClick="btn_test_knowledge"
+                android:padding="8dp"
+                android:text="Test your knowledge"
+                android:textColor="@color/black_dark2"
+                app:autoSizeMaxTextSize="30sp"
+                app:autoSizeMinTextSize="10sp"
+                app:autoSizeTextType="uniform" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>

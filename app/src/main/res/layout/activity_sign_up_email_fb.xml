@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".layouts.SignUp_emailFb">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/appBar"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        app:cardElevation="5dp"
+        app:cardBackgroundColor="@color/green2"
+        app:cardCornerRadius="0dp"
+        app:contentPadding="12sp">
+
+
+        <TextView
+            android:layout_gravity="center"
+            android:id="@+id/txt_status"
+            android:layout_width="200dp"
+             app:autoSizeMaxTextSize="30sp"
+            app:autoSizeMinTextSize="10sp"
+            app:autoSizeTextType="uniform"
+            android:layout_height="29dp"
+            android:fontFamily="@font/poppins_bold"
+            android:text="Sign Up"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            />
+
+
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+
+        <Button
+            android:id="@+id/btnGmail"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginStart="50dp"
+            android:padding="8dp"
+             android:layout_marginEnd="50dp"
+            android:background="@drawable/btn_shape"
+            android:drawableEnd="@drawable/ic_gmail"
+            android:fontFamily="@font/poppins_medium"
+            android:text="SIGN UP WITH GMAIL"
+            android:textColor="@color/black_dark2"
+            app:autoSizeTextType="uniform"
+            app:autoSizeMinTextSize="12sp"
+            app:autoSizeMaxTextSize="20sp"
+            />
+
+        <Button
+            android:id="@+id/btn_"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:padding="8dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="50dp"
+            android:background="@drawable/btn_shape"
+            android:drawableEnd="@drawable/ic_facebook"
+            android:fontFamily="@font/poppins_medium"
+             android:text="Join Facebook Group"
+            app:autoSizeTextType="uniform"
+            app:autoSizeMinTextSize="12sp"
+            app:autoSizeMaxTextSize="20sp"
+              />
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txt"
+            android:layout_width="match_parent"
+            android:layout_height="22dp"
+            android:layout_marginTop="60dp"
+            android:gravity="center"
+            android:fontFamily="@font/poppins_light"
+            app:autoSizeMaxTextSize="30sp"
+            app:autoSizeMinTextSize="10sp"
+            app:autoSizeTextType="uniform"
+            android:text="By signing up, you agree with the Term of "
+            android:textColor="@color/black_dark2" />
+
+        <TextView
+            android:id="@+id/txt_servicePolicy"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_height="22dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Services and Privacy Policy "
+            android:textColor="@color/blue1"
+            app:autoSizeMaxTextSize="30sp"
+            app:autoSizeMinTextSize="10sp"
+            app:autoSizeTextType="uniform"
+            />
+
+        <TextView
+            android:id="@+id/txt_ContactUs"
+            android:layout_marginTop="10dp"
+            android:layout_width="140dp"
+            android:layout_height="22dp"
+            app:autoSizeMaxTextSize="30sp"
+            app:autoSizeMinTextSize="10sp"
+            app:autoSizeTextType="uniform"
+            android:gravity="center"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Contact Support "
+            android:drawableEnd="@drawable/ic_forward_arrow"
+            android:textColor="@color/black_dark2"
+            />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

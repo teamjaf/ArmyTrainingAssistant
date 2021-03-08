@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="180dp"
+        android:layout_margin="15dp"
+        android:layout_alignParentTop="true"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+         app:cardCornerRadius="20dp"
+        app:cardElevation="5dp">
+
+        <LinearLayout
+
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/gradient_bg"
+            android:orientation="vertical"
+            android:paddingStart="20dp"
+            android:paddingTop="15dp"
+            android:paddingEnd="20dp"
+            android:paddingBottom="20dp">
+
+
+            <TextView
+                android:id="@+id/txt_reportDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/poppins_bold"
+                android:text="DATE"
+                 android:textAlignment="center"
+                android:textColor="@android:color/white"
+                android:textSize="16sp" />
+
+            <RelativeLayout
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+                <TextView
+                     android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="Situps"
+                    android:layout_centerVertical="true"
+                     android:textColor="@android:color/white"
+                    android:textSize="15sp" />
+                <TextView
+                    android:layout_alignParentEnd="true"
+                    android:id="@+id/txt_reportSitups"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/poppins_bold"
+                    android:text="20"
+                     android:textColor="@android:color/white"
+                    android:textSize="18dp" />
+            </RelativeLayout>
+            <RelativeLayout
+                 android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="Pushups"
+                    android:layout_centerVertical="true"
+                    android:textColor="@android:color/white"
+                    android:textSize="15sp" />
+                <TextView
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:id="@+id/txt_reportPushUps"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/poppins_bold"
+                    android:text="10"
+                    android:textColor="@android:color/white"
+                    android:textSize="18dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="Mile Run"
+                    android:layout_centerVertical="true"
+                    android:textColor="@android:color/white"
+                    android:textSize="15sp" />
+                <TextView
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:id="@+id/txt_reportRun"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/poppins_bold"
+                    android:text="10"
+                    android:textColor="@android:color/white"
+                    android:textSize="18dp" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

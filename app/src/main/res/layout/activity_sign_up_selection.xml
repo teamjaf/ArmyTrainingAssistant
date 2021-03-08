@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".layouts.SignUpSelection">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:paddingBottom="30dp"
+        android:gravity="center_horizontal"
+        android:layout_height="wrap_content">
+
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_marginTop="40dp"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:src="@drawable/solider_logo" />
+
+        <RadioGroup
+            android:id="@+id/radio_group"
+            android:layout_marginTop="25dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <RadioButton
+                 android:textSize="14sp"
+                android:fontFamily="@font/poppins"
+                android:layout_width="wrap_content"
+                android:text="  I am a new Recruit"
+                android:layout_height="wrap_content"/>
+            <RadioButton
+                android:textSize="14sp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/poppins"
+                android:layout_width="wrap_content"
+                android:text="  I was referred by a recruit"
+                android:layout_height="wrap_content"/>
+<!--            <RadioButton-->
+<!--                android:textSize="14sp"-->
+<!--                android:layout_marginTop="10dp"-->
+<!--                android:fontFamily="@font/poppins"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:text="  Recruit Ambassador"-->
+<!--                android:layout_height="wrap_content"/>-->
+            <RadioButton
+                android:textSize="14sp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/poppins"
+                android:layout_width="wrap_content"
+                android:text="  I am Recruiter"
+                android:layout_height="wrap_content"/>
+<!--            <RadioButton-->
+<!--                android:textSize="14sp"-->
+<!--                android:layout_marginTop="10dp"-->
+<!--                android:fontFamily="@font/poppins"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:text="  I am Vateran/Mentor"-->
+<!--                android:layout_height="wrap_content"/>-->
+
+        </RadioGroup>
+
+        <LinearLayout
+            android:id="@+id/linear_btnPayment"
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="50dp"
+             android:layout_height="wrap_content">
+            <Button
+                 android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:background="@drawable/btn_shape"
+                android:fontFamily="@font/poppins_medium"
+                android:text="Continue"
+                android:onClick="btnNext"
+                android:padding="8dp"
+                android:textColor="@color/black_dark2"
+                app:autoSizeMaxTextSize="30sp"
+                app:autoSizeMinTextSize="10sp"
+                app:autoSizeTextType="uniform"
+                />
+<!--            <LinearLayout-->
+<!--                android:layout_width="50dp"-->
+<!--                android:layout_height="wrap_content"/>-->
+<!--            <Button-->
+<!--                android:layout_width="100dp"-->
+<!--                android:layout_height="40dp"-->
+<!--                android:background="@drawable/btn_shape"-->
+<!--                android:fontFamily="@font/poppins_medium"-->
+<!--                android:text="Venmo"-->
+<!--                android:onClick="btnNext"-->
+<!--                android:padding="7dp"-->
+<!--                android:textColor="@color/black_dark2"-->
+<!--                app:autoSizeMaxTextSize="30sp"-->
+<!--                app:autoSizeMinTextSize="10sp"-->
+<!--                app:autoSizeTextType="uniform"-->
+<!--                />-->
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10dp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txt"
+                android:layout_width="match_parent"
+                android:layout_height="22dp"
+                android:layout_marginTop="60dp"
+                android:gravity="center"
+                android:fontFamily="@font/poppins_light"
+                app:autoSizeMaxTextSize="30sp"
+                app:autoSizeMinTextSize="10sp"
+                app:autoSizeTextType="uniform"
+                android:text="By signing up, you agree with the Term of "
+                android:textColor="@color/black_dark2" />
+
+            <TextView
+                android:id="@+id/txt_servicePolicy"
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:layout_height="22dp"
+                android:fontFamily="@font/poppins_medium"
+                android:text="Services and Privacy Policy "
+                android:textColor="@color/blue1"
+                app:autoSizeMaxTextSize="30sp"
+                app:autoSizeMinTextSize="10sp"
+                app:autoSizeTextType="uniform"
+                />
+
+            <TextView
+                android:id="@+id/txt_ContactUs"
+                android:layout_marginTop="10dp"
+                android:layout_width="140dp"
+                android:layout_height="22dp"
+                app:autoSizeMaxTextSize="30sp"
+                app:autoSizeMinTextSize="10sp"
+                app:autoSizeTextType="uniform"
+                android:gravity="center"
+                android:fontFamily="@font/poppins_medium"
+                android:text="Contact Support "
+                android:drawableEnd="@drawable/ic_forward_arrow"
+                android:textColor="@color/black_dark2"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    </ScrollView>
+
+</RelativeLayout>

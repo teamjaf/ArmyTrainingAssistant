@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".layouts.Recruit.AudioFiles">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/appBar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        app:elevation="5dp"
+        app:cardBackgroundColor="@color/green2"
+        app:cardCornerRadius="0dp"
+        app:contentPadding="12sp">
+
+        <ImageButton
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="15dp"
+            android:background="@android:color/transparent"
+            android:onClick="btn_back"
+            android:src="@drawable/ic_back" />
+
+        <TextView
+            android:id="@+id/txt_screenName"
+            android:layout_width="160dp"
+            android:layout_height="29dp"
+            android:layout_gravity="center"
+            android:fontFamily="@font/poppins_semibold"
+            android:gravity="center"
+            android:text="Audio Files"
+            android:textColor="@android:color/white"
+            app:autoSizeMaxTextSize="30sp"
+            app:autoSizeMinTextSize="10sp"
+            app:autoSizeTextType="uniform" />
+
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_videosButtons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/jcplayer"
+        android:layout_below="@id/appBar"
+
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="5dp" />
+
+    <com.example.jean.jcplayer.view.JcPlayerView
+        android:id="@+id/jcplayer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bg_player_dark"
+        android:gravity="bottom"
+        app:next_icon_color="@android:color/holo_green_light"
+        app:pause_icon_color="@android:color/holo_green_light"
+        app:play_icon_color="@android:color/holo_green_light"
+        app:previous_icon_color="@android:color/holo_green_light"
+        app:progress_color="@android:color/holo_green_light"
+        app:random_icon_color="@android:color/white"
+        app:repeat_icon_color="@android:color/white"
+        app:seek_bar_color="@android:color/white"
+        app:text_audio_current_duration_color="@android:color/holo_green_light"
+        app:text_audio_duration_color="@android:color/holo_green_light"
+        app:text_audio_title_color="@android:color/white" />
+
+</RelativeLayout>

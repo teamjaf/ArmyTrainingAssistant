@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".layouts.Recruit.PhysicalTraining">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/appBar"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        app:elevation="5dp"
+        app:cardBackgroundColor="@color/green2"
+        app:cardCornerRadius="0dp"
+         >
+
+        <ImageButton
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="10dp"
+            android:background="@android:color/transparent"
+            android:onClick="btn_back"
+            android:src="@drawable/ic_back" />
+
+        <TextView
+            android:id="@+id/txt_screenName"
+            android:layout_width="190dp"
+            android:layout_height="26dp"
+            android:gravity="center"
+             android:layout_gravity="center"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="Physical Training"
+            android:textColor="@android:color/white"
+            app:autoSizeMaxTextSize="30sp"
+            app:autoSizeMinTextSize="7sp"
+            app:autoSizeTextType="uniform" />
+
+    </androidx.cardview.widget.CardView>
+
+<ScrollView
+    android:layout_below="@id/appBar"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:orientation="vertical"
+        android:layout_marginTop="40dp"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:padding="6dp"
+            app:autoSizeMaxTextSize="30sp"
+            android:textAlignment="center"
+            app:autoSizeMinTextSize="10sp"
+            app:autoSizeTextType="uniform"
+             android:background="@drawable/btn_shape"
+            android:fontFamily="@font/poppins_medium"
+            android:onClick="btn_BaslineTest"
+            android:text="BASELINE TEST"
+            android:textColor="@color/black_dark2"
+              />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:padding="6dp"
+            app:autoSizeMaxTextSize="30sp"
+            android:textAlignment="center"
+            app:autoSizeMinTextSize="10sp"
+            app:autoSizeTextType="uniform"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/btn_shape"
+            android:fontFamily="@font/poppins_medium"
+            android:onClick="btn_standards"
+            android:text="Standards"
+            android:textColor="@color/black_dark2"
+              />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:padding="6dp"
+            app:autoSizeMaxTextSize="30sp"
+            android:textAlignment="center"
+            app:autoSizeMinTextSize="10sp"
+            app:autoSizeTextType="uniform"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/btn_shape"
+            android:fontFamily="@font/poppins_medium"
+            android:onClick="btn_prepDrill"
+            android:text="Pref Drill 1-10"
+            android:textColor="@color/black_dark2"
+             />
+        <Button
+            android:padding="6dp"
+            app:autoSizeMaxTextSize="30sp"
+            android:textAlignment="center"
+            app:autoSizeMinTextSize="10sp"
+            app:autoSizeTextType="uniform"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/btn_shape"
+            android:fontFamily="@font/poppins_medium"
+            android:onClick="btn_recoveryDrill"
+            android:text="Recovery Drill"
+            android:textColor="@color/black_dark2"
+              />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/btn_shape"
+            android:fontFamily="@font/poppins_medium"
+            android:onClick="btn_4ForCore"
+            android:text="4 for the Core"
+            android:textColor="@color/black_dark2"
+            android:padding="6dp"
+            app:autoSizeMaxTextSize="30sp"
+            android:textAlignment="center"
+            app:autoSizeMinTextSize="10sp"
+            app:autoSizeTextType="uniform" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/btn_shape"
+            android:fontFamily="@font/poppins_medium"
+            android:onClick="btn_pushupSitups"
+            android:text="Pushup/Situp/Run"
+            android:textColor="@color/black_dark2"
+            android:padding="6dp"
+            app:autoSizeMaxTextSize="30sp"
+            android:textAlignment="center"
+            app:autoSizeMinTextSize="10sp"
+            app:autoSizeTextType="uniform"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/btn_shape"
+            android:fontFamily="@font/poppins_medium"
+            android:onClick="btn_armyFitness"
+            android:text="Army Fitness test"
+            android:textColor="@color/black_dark2"
+            android:padding="6dp"
+            app:autoSizeMaxTextSize="30sp"
+            android:textAlignment="center"
+            app:autoSizeMinTextSize="10sp"
+            app:autoSizeTextType="uniform" />
+
+        <Button
+
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/btn_shape"
+            android:fontFamily="@font/poppins_medium"
+            android:onClick="btn_activityReports"
+            android:text="My Activity Reports"
+            android:textColor="@color/black_dark2"
+            android:padding="6dp"
+            app:autoSizeMaxTextSize="30sp"
+            android:textAlignment="center"
+            app:autoSizeMinTextSize="10sp"
+            app:autoSizeTextType="uniform" />
+
+
+    </LinearLayout>
+</ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,372 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:focusableInTouchMode="true"
+    tools:context=".layouts.Recruiter.RecruiterProfile">
+
+    <ScrollView
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:orientation="vertical"
+            android:paddingBottom="30dp">
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintImg"
+                android:layout_width="match_parent"
+                android:layout_height="140dp">
+
+                <ImageView
+                    android:id="@+id/recruit_img"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="16dp"
+                    android:src="@drawable/placeholder"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.498"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageButton
+                    android:id="@+id/btn_editPic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="24dp"
+                    android:layout_toEndOf="@id/recruit_img"
+                    android:background="@drawable/gradient_bg"
+                    android:padding="3dp"
+                    android:src="@drawable/ic_edit"
+
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.614"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="1dp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="Gender"
+                    android:textColor="@color/black_dark2"
+                    android:textSize="15sp" />
+
+                <RadioGroup
+                    android:id="@+id/radioGroup_gender"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/poppins_medium"
+                        android:text=" Male"
+                        android:textColor="@color/green1"
+                        android:textSize="15sp"
+                        tools:ignore="HardcodedText" />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:layout_weight="1"
+                        android:fontFamily="@font/poppins_medium"
+                        android:text=" Female"
+                        android:textColor="@color/green1"
+                        android:textSize="15sp"
+                        tools:ignore="HardcodedText" />
+                </RadioGroup>
+
+            </LinearLayout>
+
+
+            <TextView
+                app:autoSizeTextType="uniform"
+                app:autoSizeMinTextSize="10sp"
+                app:autoSizeMaxTextSize="30sp"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/poppins_medium"
+                android:text="Full name"
+                android:textColor="@color/greyHint"
+                />
+
+            <EditText
+                android:id="@+id/edt_fullName"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/btn_shape"
+                android:fontFamily="@font/poppins"
+                android:foregroundTint="@android:color/transparent"
+                android:paddingStart="10dp"
+                android:textColor="@color/black_dark2"
+                android:textColorHint="#818080" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                app:autoSizeTextType="uniform"
+                app:autoSizeMinTextSize="10sp"
+                app:autoSizeMaxTextSize="30sp"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/poppins_medium"
+                android:text="City"
+                android:textColor="@color/greyHint"
+                />
+
+            <EditText
+                android:id="@+id/edt_city"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/btn_shape"
+                android:fontFamily="@font/poppins"
+                android:foregroundTint="@android:color/transparent"
+                android:paddingStart="10dp"
+                android:textColor="@color/black_dark2"
+                android:textColorHint="#818080" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                app:autoSizeTextType="uniform"
+                app:autoSizeMinTextSize="10sp"
+                app:autoSizeMaxTextSize="30sp"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/poppins_medium"
+                android:text="State"
+                android:textColor="@color/greyHint"
+                />
+
+            <EditText
+                android:id="@+id/edt_state"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/btn_shape"
+                android:fontFamily="@font/poppins"
+                android:foregroundTint="@android:color/transparent"
+                android:paddingStart="10dp"
+                android:textColor="@color/black_dark2"
+                android:textColorHint="#818080" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/poppins_medium"
+                android:text="Zip"
+                android:textColor="@color/greyHint"
+                app:autoSizeTextType="uniform"
+                app:autoSizeMinTextSize="10sp"
+                app:autoSizeMaxTextSize="30sp" />
+
+            <EditText
+                android:id="@+id/edt_zip"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/btn_shape"
+                android:fontFamily="@font/poppins"
+                android:foregroundTint="@android:color/transparent"
+                android:paddingStart="10dp"
+                android:textColor="@color/black_dark2"
+                android:textColorHint="#818080" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/poppins_medium"
+                android:text="Email"
+                android:textColor="@color/greyHint"
+                app:autoSizeTextType="uniform"
+                app:autoSizeMinTextSize="10sp"
+                app:autoSizeMaxTextSize="30sp" />
+
+            <EditText
+                android:id="@+id/edt_email"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/btn_shape"
+                android:enabled="false"
+                android:fontFamily="@font/poppins"
+                android:foregroundTint="@android:color/transparent"
+                android:inputType="textEmailAddress"
+                android:paddingStart="10dp"
+                android:textColor="@color/black_dark2"
+                android:textColorHint="#818080" />
+
+            <TextView
+                app:autoSizeTextType="uniform"
+                app:autoSizeMinTextSize="10sp"
+                app:autoSizeMaxTextSize="30sp"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/poppins_medium"
+                android:text="Phone"
+                android:textColor="@color/greyHint"/>
+
+            <EditText
+                android:id="@+id/edt_phone"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/btn_shape"
+                android:fontFamily="@font/poppins"
+                android:foregroundTint="@android:color/transparent"
+                android:inputType="number"
+                android:paddingStart="10dp"
+                android:textColor="@color/black_dark2"
+                android:textColorHint="#818080" />
+
+
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp">
+
+                <TextView
+                    android:gravity="start"
+                    app:autoSizeTextType="uniform"
+                    app:autoSizeMinTextSize="12sp"
+                    app:autoSizeMaxTextSize="30sp"
+                    android:id="@+id/txt_recruitingStation"
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="2dp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="Recruiting Station"
+                    android:textColor="@color/greyHint"
+                    />
+
+                <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+                    android:id="@+id/spinner_recruitingStations"
+                    android:layout_width="match_parent"
+                    app:hintText="Select Recruiting station"
+                    android:layout_height="40dp"
+                    android:layout_toEndOf="@+id/txt_recruitingStation"
+                    android:gravity="center"
+                    app:autoSizeTextType="uniform"
+                    app:autoSizeMinTextSize="12sp"
+                    app:autoSizeMaxTextSize="30sp"
+                    android:layout_alignParentEnd="true"
+                    android:background="@drawable/btn_shape"
+                    tools:ignore="UnusedAttribute" />
+
+
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    app:autoSizeTextType="uniform"
+                    app:autoSizeMinTextSize="12sp"
+                    app:autoSizeMaxTextSize="30sp"
+                    android:layout_width="100dp"
+                    android:layout_height="25dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="2dp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="Recruier Id"
+                    android:textColor="@color/black_dark2"
+                    android:autoSizeTextType="uniform"
+                    />
+
+                <TextView
+                    android:id="@+id/txt_recruiterId"
+                    android:layout_width="100dp"
+                    android:layout_height="35dp"
+                    android:layout_alignParentEnd="true"
+                    android:background="@drawable/btn_shape"
+                    android:fontFamily="@font/poppins_medium"
+                    android:gravity="center"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentBottom="true"
+                    android:padding="5dp"
+                    android:textSize="16sp" />
+
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginEnd="50dp"
+                    android:background="@drawable/btn_shape"
+                    android:fontFamily="@font/poppins_medium"
+                    android:onClick="btnUpdate"
+                    android:paddingEnd="10dp"
+                    android:text="Update"
+                    android:textColor="@color/black_dark2"
+                    android:textSize="15sp" />
+
+                <Button
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentEnd="true"
+                    android:background="@drawable/btn_shape"
+                    android:fontFamily="@font/poppins_medium"
+                    android:paddingEnd="10dp"
+                    android:text="Cancel"
+                    android:textColor="@color/black_dark2"
+                    android:textSize="15sp" />
+
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>

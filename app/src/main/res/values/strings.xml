@@ -1,0 +1,48 @@
+<resources>
+    <string name="app_name">Basic Training Prep</string>
+    <string name="title_activity_recruit_welcome_drawer">RecruitWelcomeDrawer</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="pref_remove_ads_key">removeAd</string>
+    <string name="pref_ad_removal_purchased">Item purchased</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="title_activity_recruit_welcom_drawer">RecruitWelcomDrawer</string>
+    <string name="ambassador_welcome_screen">Note: Ambassadors have access to their recruit (such as a parent, or mentor would be in this group). they have limited access to their recruit - to include completed modules and achievements/badges), can send messages, and have access to the Army Nation - a FB group to be set up.</string>
+    <!--    <string name="google_api">AIzaSyAnQmMSjXkQBMZbuihcD4L4GKDaWNbuNXo</string>-->
+    <string name="google_api">AIzaSyBaS70n1fkcjpLWsXdqprzxiEthExvqI2Y</string>
+
+    <array name="autosize_text_sizes">
+        <item>13sp</item>
+        <item>14sp</item>
+        <item>16sp</item>
+        <item>18sp</item>
+        <item>20sp</item>
+    </array>
+
+    <string name="player_error">Error initializing YouTube player: %s</string>
+    <string name="seek_to">Jump To</string>
+    <string name="seek_to_hint">Seconds</string>
+    <string name="yes">Yes</string>
+    <string name="code_of_conduct_1">The Code of Conduct provides guidance for the behavior and actions of members of the Armed Forces of the United States. This guidance applies not only on the battlefield, but also in the event that the service member is captured and becomes a prisoner of war (POW). The Code is delineated in six articles.</string>
+    <string name="code_of_conduct_2">I am an American, fighting in the forces which guard my country and our way of life. I am prepared to give my life in their defense.</string>
+    <string name="code_of_conduct_3">I will never surrender of my own free will. If in command, I will never surrender the members of my command while they still have the means to resist.</string>
+    <string name="conduct_4">If I am captured I will continue to resist by all means available. I will make every effort to escape and aid others to escape. I will accept neither parole nor special favors from the enemy.</string>
+    <string name="conduct_5">If I become a prisoner of war, I will keep faith with my fellow prisoners. I will give no information or take part in any action which might be harmful to my comrades. If I am senior, I will take command. If not, I will obey the lawful orders of those appointed over me and will back them up in every way.</string>
+    <string name="conduct_6">When questioned, should I become a prisoner of war, I am required to give name, rank, service number and date of birth. I will evade answering further questions to the utmost of my ability. I will make no oral or written statements disloyal to my country and its allies or harmful to their cause.</string>
+    <string name="conduct7">I will never forget that I am an American, fighting for freedom, responsible for my actions, and dedicated to the principles which made my country free. I will trust in my God and in the United States of America.</string>
+    <string name="holdover_message">To stop holdover unselected from your profile.</string>
+    <string name="four_fundamentals_desc">The soldier must understand and apply the four key fundamentals before he approaches the firing line. He must establish a steady position allowing observation of the target. He must aim the rifle at the target by aligning the sight system, and fire the rifle without disturbing this alignment by improper breathing or during trigger squeeze. These skills are known collectively as the four fundamentals. Applying these four fundamentals rapidly and consistently is the integrated act of firing.</string>
+    <string name="breath_control">Breath Control. As the firer’s skills improve and as timed or multiple targets are presented, he must learn to control his breath at any part of the breathing cycle. Two types of breath control techniques are practiced during dry fire. The coach/trainer ensures that the firer uses two breathing techniques and understands them by instructing him to exaggerate his breathing. The firer must be aware of the rifle’s movement (while sighted on a target) as a result of breathing.</string>
+    <string name="trigger_squeeze">Trigger Squeeze. A novice firer can learn to place the rifle in a
+steady position and to correctly aim at the target if he follows
+the basic principles. If the trigger is not properly squeezed, the
+rifle will be misaligned with the target at the moment of firing.</string>
+</resources>

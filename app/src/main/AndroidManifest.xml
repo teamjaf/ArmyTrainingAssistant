@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.eb.basictrainingprep">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        <activity android:name=".layouts.Recruit.ArmyRankLink" android:screenOrientation="landscape">
+
+        </activity>
+        <activity android:name=".layouts.Recruit.ArmyRanksDetails" />
+        <activity android:name=".layouts.Recruit.ArmyRanks" />
+        <activity android:name=".layouts.Recruit.Eight_CycleFunction" />
+        <activity android:name=".layouts.Recruit.Fundamentals_details" />
+        <activity android:name=".layouts.Recruit.FourFundamentals" />
+        <activity android:name=".layouts.Recruit.ResilinceAudio" />
+        <activity android:name=".InAppBillingActivity" />
+        <activity android:name=".layouts.Recruiter.RecruiterProfile" />
+        <activity android:name=".layouts.Recruit.MiliteryTime" />
+        <activity android:name=".layouts.Recruit.Notification_recruit" />
+        <activity android:name=".layouts.Recruit.MyPerfromance" />
+        <activity android:name=".layouts.Recruiter.RecruitActivities" />
+        <activity android:name=".layouts.Recruit.AudioFiles" />
+        <activity android:name=".layouts.Recruit.ArmyResiliency" />
+        <activity android:name=".layouts.Recruit.MyActivityReport" />
+        <activity android:name=".layouts.Recruit.DailyActivities" />
+        <activity android:name=".layouts.Recruit.WebViewActivity" />
+        <activity android:name=".layouts.Vateran_Mentor.VateranMentorLayout" />
+        <activity android:name=".layouts.Recruiter.RecruiterLayout" />
+        <activity android:name=".layouts.Ambassador.AmbassadorLayout" />
+        <activity android:name=".layouts.SplashScreeen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".layouts.SignUp_emailFb" />
+        <activity android:name=".layouts.Recruit.RifleMarksmanShip" />
+        <activity
+            android:name=".layouts.Recruit.FitnessVideos"
+            android:configChanges="orientation|screenSize|keyboardHidden|smallestScreenSize|screenLayout" />
+        <activity android:name=".layouts.Recruit.PhysicalTraining" />
+        <activity android:name=".layouts.Recruit.ImportantArmyDates" />
+        <activity android:name=".layouts.Recruit.PhoneticAlphabet" />
+        <activity android:name=".layouts.Recruit.QuizResult" />
+        <activity android:name=".layouts.Recruit.Quiz" />
+        <activity android:name=".layouts.Recruit.Memorization" />
+        <activity android:name=".layouts.Recruit.WarriorEthos" />
+        <activity android:name=".layouts.Recruit.VideoScreen" />
+        <activity android:name=".layouts.Recruit.ArmyKnowledge" />
+        <activity android:name=".layouts.Recruit.UpdatesVideo" />
+        <activity android:name=".layouts.Recruit.Modules" />
+        <activity android:name=".layouts.Ambassador.AmbassadorProfile" />
+        <activity android:name=".layouts.Recruit.RecruitProfile" />
+        <activity android:name=".layouts.Ambassador.AmbassadorWelcome" />
+        <activity android:name=".layouts.Recruiter.RecuriterList" />
+        <activity android:name=".layouts.Recruit.RecruitWelcomeDrawer" />
+        <activity android:name=".layouts.Recruit.RecruitWelcome2" />
+        <activity android:name=".layouts.SignUpSelection" />
+        <activity android:name=".layouts.MainActivity" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

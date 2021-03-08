@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignTop="@+id/audio_title"
+        android:layout_alignBottom="@+id/separator"
+        android:orientation="horizontal"
+        >
+
+        <View
+            android:id="@+id/song_progress_view"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0"
+            android:background="#4CAF50"
+            />
+
+        <View
+            android:id="@+id/song_anti_progress_view"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/audio_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="15dp"
+        android:gravity="start"
+        android:fontFamily="@font/poppins_medium"
+        android:paddingLeft="10dp"
+        android:paddingStart="10dp"
+        android:text="SONG TITLE"
+        android:textAlignment="textStart"
+        android:textSize="16sp"
+        />
+
+
+    <TextView
+        android:layout_below="@+id/audio_title"
+        android:id="@+id/separator"
+        android:layout_margin="7dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+         android:background="@android:color/darker_gray"
+        android:paddingEnd="3dp"
+        android:paddingStart="3dp"
+        />
+
+
+</RelativeLayout>

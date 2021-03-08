@@ -1,0 +1,390 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".layouts.Recruit.ArmyKnowledge">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:paddingBottom="15dp"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_height="match_parent">
+
+        <androidx.cardview.widget.CardView
+            android:layout_marginTop="20dp"
+            app:cardCornerRadius="20dp"
+            android:elevation="5dp"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
+                android:layout_width="match_parent"
+                android:src="@drawable/armyknowledge_pic"
+                android:layout_height="200dp"/>
+        </androidx.cardview.widget.CardView>
+
+        <RelativeLayout
+            android:layout_marginTop="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="20dp"
+                android:layout_toStartOf="@+id/btn_armySongs"
+                android:fontFamily="@font/poppins_medium"
+                android:text="The Army Songs"
+                android:textColor="@color/black_dark2"
+                app:autoSizeMaxTextSize="30sp"
+                app:autoSizeMinTextSize="12sp"
+                app:autoSizeTextType="uniform" />
+
+            <Button
+                android:id="@+id/btn_armySongs"
+                 android:clickable="true"
+                android:focusable="true"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                 android:background="@drawable/btn_shape"
+                android:fontFamily="@font/poppins_medium"
+                android:text="Begin"
+                 android:textColor="@color/black_dark2"
+                app:autoSizeMaxTextSize="30sp"
+                android:padding="5dp"
+                app:autoSizeMinTextSize="8sp"
+                app:autoSizeTextType="uniform"
+                />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="20dp"
+                android:layout_toStartOf="@+id/btn_armyValues"
+                android:fontFamily="@font/poppins_medium"
+                android:text="Army Values"
+                android:textColor="@color/black_dark2"
+                app:autoSizeMaxTextSize="30sp"
+                app:autoSizeMinTextSize="12sp"
+                app:autoSizeTextType="uniform" />
+
+            <Button
+                android:id="@+id/btn_armyValues"
+                android:clickable="true"
+                android:focusable="true"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:background="@drawable/btn_shape"
+                android:fontFamily="@font/poppins_medium"
+                android:text="Begin"
+                android:textColor="@color/black_dark2"
+                android:padding="5dp"
+                app:autoSizeMinTextSize="8sp"
+                app:autoSizeTextType="uniform" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="20dp"
+                android:layout_toStartOf="@+id/btn_solidersCreed"
+                android:fontFamily="@font/poppins_medium"
+                android:text="The Soliders Creed"
+                android:textColor="@color/black_dark2"
+                app:autoSizeTextType="uniform"
+                app:autoSizeMinTextSize="12sp"
+                app:autoSizeMaxTextSize="30sp"/>
+
+            <Button
+                android:id="@+id/btn_solidersCreed"
+                android:clickable="true"
+                android:focusable="true"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:background="@drawable/btn_shape"
+                android:fontFamily="@font/poppins_medium"
+                android:text="Begin"
+                android:textColor="@color/black_dark2"
+                android:padding="5dp"
+                app:autoSizeMinTextSize="8sp"
+                app:autoSizeTextType="uniform" />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:layout_alignParentStart="true"
+                android:layout_marginEnd="20dp"
+                android:layout_toStartOf="@+id/btn_armyRank"
+                android:fontFamily="@font/poppins_medium"
+                android:text="Army Ranks"
+                app:autoSizeTextType="uniform"
+                app:autoSizeMinTextSize="12sp"
+                app:autoSizeMaxTextSize="30sp"
+                android:textColor="@color/black_dark2"
+                 />
+
+            <Button
+                android:id="@+id/btn_armyRank"
+                android:clickable="true"
+                android:focusable="true"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:background="@drawable/btn_shape"
+                android:fontFamily="@font/poppins_medium"
+                android:text="Begin"
+                android:textColor="@color/black_dark2"
+                android:textSize="13sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="20dp"
+                android:layout_toStartOf="@+id/btn_phoneticAlphbets"
+                android:fontFamily="@font/poppins_medium"
+                android:text="Phonetic Alphabet"
+                android:textColor="@color/black_dark2"
+                app:autoSizeTextType="uniform"
+                app:autoSizeMinTextSize="12sp"
+                app:autoSizeMaxTextSize="30sp"
+                />
+
+            <Button
+                android:id="@+id/btn_phoneticAlphbets"
+                android:clickable="true"
+                android:focusable="true"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:background="@drawable/btn_shape"
+                android:fontFamily="@font/poppins_medium"
+                android:text="Begin"
+                android:textColor="@color/black_dark2"
+                android:padding="5dp"
+                app:autoSizeMinTextSize="8sp"
+                app:autoSizeTextType="uniform" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                app:autoSizeTextType="uniform"
+                app:autoSizeMinTextSize="12sp"
+                app:autoSizeMaxTextSize="30sp"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="20dp"
+                android:layout_toStartOf="@+id/btn_warriorEthos"
+                android:fontFamily="@font/poppins_medium"
+                android:text="Warrior Ethos"
+                android:textColor="@color/black_dark2"
+
+                />
+
+            <Button
+                android:id="@+id/btn_warriorEthos"
+                android:clickable="true"
+                android:focusable="true"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:background="@drawable/btn_shape"
+                android:fontFamily="@font/poppins_medium"
+                android:text="Begin"
+                android:textColor="@color/black_dark2"
+                android:padding="5dp"
+                app:autoSizeMinTextSize="8sp"
+                app:autoSizeTextType="uniform" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:layout_alignParentStart="true"
+                app:autoSizeTextType="uniform"
+                app:autoSizeMinTextSize="12sp"
+                app:autoSizeMaxTextSize="30sp"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="20dp"
+                android:layout_toStartOf="@+id/btn_importantArmyDates"
+                android:fontFamily="@font/poppins_medium"
+                android:text="Important Army Date"
+                android:textColor="@color/black_dark2" />
+
+            <Button
+                android:id="@+id/btn_importantArmyDates"
+                android:clickable="true"
+                android:focusable="true"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:background="@drawable/btn_shape"
+                android:fontFamily="@font/poppins_medium"
+                android:text="Begin"
+                android:textColor="@color/black_dark2"
+                android:padding="5dp"
+                app:autoSizeMinTextSize="8sp"
+                app:autoSizeTextType="uniform" />
+
+        </RelativeLayout>
+
+<!--        <RelativeLayout-->
+<!--            android:layout_marginTop="20dp"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content">-->
+
+<!--            <TextView-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="25dp"-->
+<!--                android:layout_alignParentStart="true"-->
+<!--                android:layout_centerVertical="true"-->
+<!--                android:layout_marginEnd="20dp"-->
+<!--                app:autoSizeTextType="uniform"-->
+<!--                app:autoSizeMinTextSize="12sp"-->
+<!--                app:autoSizeMaxTextSize="30sp"-->
+<!--                android:layout_toStartOf="@+id/btn_memorization"-->
+<!--                android:fontFamily="@font/poppins_medium"-->
+<!--                android:text="Memorization"-->
+<!--                android:textColor="@color/black_dark2"-->
+<!--                />-->
+
+<!--            <Button-->
+<!--                android:id="@+id/btn_memorization"-->
+<!--                android:clickable="true"-->
+<!--                android:focusable="true"-->
+<!--                android:layout_centerVertical="true"-->
+<!--                android:layout_alignParentEnd="true"-->
+<!--                android:layout_width="100dp"-->
+<!--                android:layout_height="30dp"-->
+<!--                android:background="@drawable/btn_shape"-->
+<!--                android:fontFamily="@font/poppins_medium"-->
+<!--                android:text="Begin"-->
+<!--                android:textColor="@color/black_dark2"-->
+<!--                android:textSize="13sp" />-->
+
+<!--        </RelativeLayout>-->
+<!--        <RelativeLayout-->
+<!--            android:layout_marginTop="20dp"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content">-->
+
+<!--            <TextView-->
+<!--                android:layout_marginEnd="20dp"-->
+<!--                android:layout_toStartOf="@+id/btn_armyExam"-->
+<!--                android:id="@+id/txt_finalArmy"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:text="Final Army Knowledge Exam"-->
+<!--                android:textColor="@color/black_dark2"-->
+<!--                app:autoSizeTextType="uniform"-->
+<!--                app:autoSizeMinTextSize="12sp"-->
+<!--                app:autoSizeMaxTextSize="30sp"-->
+<!--                android:layout_centerVertical="true"-->
+<!--                android:fontFamily="@font/poppins_medium"-->
+<!--                android:layout_alignParentStart="true"-->
+<!--                android:layout_height="25dp"/>-->
+
+<!--            <Button-->
+<!--                android:id="@+id/btn_armyExam"-->
+<!--                android:clickable="true"-->
+<!--                android:focusable="true"-->
+<!--                android:layout_centerVertical="true"-->
+<!--                android:layout_alignParentEnd="true"-->
+<!--                android:layout_width="100dp"-->
+<!--                android:layout_height="30dp"-->
+<!--                android:background="@drawable/btn_shape"-->
+<!--                android:fontFamily="@font/poppins_medium"-->
+<!--                android:text="Begin"-->
+<!--                android:textColor="@color/black_dark2"-->
+<!--                android:textSize="13sp" />-->
+
+<!--        </RelativeLayout>-->
+
+        <TextView
+            android:layout_gravity="center"
+            android:id="@+id/txt_ContactUs"
+            android:padding="5dp"
+            app:autoSizeMinTextSize="8sp"
+            app:autoSizeTextType="uniform"
+            android:layout_marginTop="40dp"
+            android:layout_width="125dp"
+            android:layout_height="28dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Contact Support "
+            android:drawableEnd="@drawable/ic_forward_arrow"
+            android:textColor="@color/black_dark2"
+            />
+
+    </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

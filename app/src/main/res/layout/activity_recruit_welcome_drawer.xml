@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/drawer_layout"
+    tools:context=".layouts.Recruit.RecruitWelcomeDrawer">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/container_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/toolbar" />
+    </LinearLayout>
+        <FrameLayout
+            android:id="@+id/content_frame"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <include
+                layout="@layout/activity_recruit_welcome2"
+                />
+        </FrameLayout>
+
+        <TextView
+            android:visibility="visible"
+            android:id="@+id/txt_alertHolds"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"
+            android:padding="10dp"
+            android:textSize="16sp"
+            android:textColor="@color/black_dark"
+            android:layout_width="wrap_content"
+            android:text="@string/holdover_message"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+
+    <ListView
+        android:id="@+id/left_drawer"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:background="#FFFFFF"
+        android:choiceMode="singleChoice"
+        android:divider="@android:color/darker_gray"
+        android:dividerHeight="1dp" />
+
+</androidx.drawerlayout.widget.DrawerLayout>

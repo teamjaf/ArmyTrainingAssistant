@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".layouts.Recruiter.RecuriterList">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/appBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        app:cardCornerRadius="0dp"
+        app:cardElevation="5dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/green2"
+            android:orientation="vertical"
+            android:padding="12dp">
+
+            <TextView
+                android:gravity="center"
+                android:layout_width="200dp"
+                 android:layout_centerHorizontal="true"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="Recruits List"
+                android:textColor="@android:color/white"
+                app:autoSizeMaxTextSize="30sp"
+                app:autoSizeMinTextSize="10sp"
+                app:autoSizeTextType="uniform"
+                android:layout_height="29dp" />
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/appBar"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="20dp">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="15dp"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/gradient_bg"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins"
+                        android:lineHeight="18dp"
+                        android:text="Lorem ip  sum dolor sit amet, consectetur adipiscing
+elit, sed do eiusmod tempor incididunt ut labore et
+dolore magna aliqua. Quis viverra nibh cras pulvinar
+ mattis nunc. Erat imperdiet sed euismod nisi porta
+ lorem. Viverra orci sagittis eu volutpat odio facilisis
+ mauris sit. "
+                        android:textAlignment="center"
+                        android:textColor="@android:color/white"
+                        android:textSize="14sp" />
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="100dp"
+                 android:id="@+id/recycler_reruitActivity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/txt_ContactUs"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:drawableEnd="@drawable/ic_forward_arrow"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Contact Support "
+        android:textColor="@color/black_dark2"
+        app:autoSizeMaxTextSize="30sp"
+        app:autoSizeMinTextSize="10sp"
+        app:autoSizeTextType="uniform"
+        />
+
+
+</RelativeLayout>

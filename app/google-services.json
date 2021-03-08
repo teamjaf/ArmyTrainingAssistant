@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "81397244483",
+    "firebase_url": "https://basic-training-preps.firebaseio.com",
+    "project_id": "basic-training-preps",
+    "storage_bucket": "basic-training-preps.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:81397244483:android:d510fe860a59c61cf86af6",
+        "android_client_info": {
+          "package_name": "com.eb.basictrainingprep"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "81397244483-n0b3744giakdrkvbntooidl2uravd75j.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.eb.basictrainingprep",
+            "certificate_hash": "fc72417f7a1bcb7e0965d8d11ab97436c6303343"
+          }
+        },
+        {
+          "client_id": "81397244483-qgtk3bt22qlhpinqg4ic9u2sutr8nlpa.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBv4TnVgaPS1eW4bJ41Nk52FCy6gjuWWv0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "81397244483-qgtk3bt22qlhpinqg4ic9u2sutr8nlpa.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

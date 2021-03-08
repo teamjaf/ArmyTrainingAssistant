@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent"
+    tools:context=".layouts.Recruiter.RecruiterLayout">
+
+    <LinearLayout
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_height="match_parent">
+
+        <androidx.cardview.widget.CardView
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:padding="10dp"
+                android:background="@drawable/gradient_bg"
+                android:layout_height="match_parent">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:text="Lorem ipsum dolor sit amet, consectetur adipiscing
+elit, sed do eiusmod tempor incididunt ut labore et
+dolore magna aliqua. Quis viverra nibh cras pulvinar
+ mattis nunc. Erat imperdiet sed euismod nisi porta
+ lorem. Viverra orci sagittis eu volutpat odio facilisis
+ mauris sit. "
+                    android:lineHeight="18dp"
+
+                    android:textSize="14sp"
+                    android:textAlignment="center"
+                    android:fontFamily="@font/poppins"
+                    android:textColor="@android:color/white"
+                    android:layout_height="wrap_content"/>
+
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <Button
+            android:onClick="btn_inviteRecruit"
+            android:layout_marginTop="40dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginEnd="50dp"
+            android:background="@drawable/btn_shape"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Invite a Recruite"
+             android:textColor="@color/black_dark2"
+            android:padding="8dp"
+            app:autoSizeMaxTextSize="30sp"
+            app:autoSizeMinTextSize="10sp"
+            app:autoSizeTextType="uniform"
+            />
+
+        <Button
+            android:onClick="btn_recruitList"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginEnd="50dp"
+            android:background="@drawable/btn_shape"
+            android:fontFamily="@font/poppins_medium"
+            android:text="My Recruit List"
+             android:textColor="@color/black_dark2"
+            android:padding="8dp"
+            app:autoSizeMaxTextSize="30sp"
+            app:autoSizeMinTextSize="10sp"
+            app:autoSizeTextType="uniform"
+            />
+
+
+        <Button
+            android:onClick="btn_facebookGroup"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginEnd="50dp"
+            android:background="@drawable/btn_shape"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Facebook Group"
+            android:padding="8dp"
+            app:autoSizeMaxTextSize="30sp"
+            app:autoSizeMinTextSize="10sp"
+            app:autoSizeTextType="uniform"            android:textColor="@color/black_dark2"
+              />
+
+        <Button
+            android:onClick="btn_myProfile"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginEnd="50dp"
+            android:background="@drawable/btn_shape"
+            android:fontFamily="@font/poppins_medium"
+            android:text="My Profile"
+            android:paddingEnd="10dp"
+            android:textColor="@color/black_dark2"
+            android:padding="8dp"
+            app:autoSizeMaxTextSize="30sp"
+            app:autoSizeMinTextSize="10sp"
+            app:autoSizeTextType="uniform"
+            />
+
+    </LinearLayout>
+
+
+    <Button
+        android:onClick="btnLogout"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="15dp"
+        android:text="Logout"
+        android:textColor="@color/black_dark2"
+        android:textSize="12sp"
+        android:textAllCaps="false"
+        android:gravity="center"
+        android:fontFamily="@font/poppins"
+        android:background="@drawable/btn_shape"
+        android:layout_width="70dp"
+        android:layout_height="22dp"/>
+
+</RelativeLayout>

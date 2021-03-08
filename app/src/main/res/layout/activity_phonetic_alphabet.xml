@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".layouts.Recruit.PhoneticAlphabet">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/appBar"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:elevation="5dp"
+        app:cardBackgroundColor="@color/green2"
+        app:cardCornerRadius="0dp"
+        app:contentPadding="12sp">
+
+        <ImageButton
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="10dp"
+            android:background="@android:color/transparent"
+            android:onClick="btn_back"
+            android:src="@drawable/ic_back" />
+
+        <TextView
+             android:id="@+id/txt_screenName"
+            android:layout_width="190dp"
+            android:layout_height="28dp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:fontFamily="@font/poppins_bold"
+            android:text="Phonetic Alphbets"
+            android:textColor="@android:color/white"
+            app:autoSizeMaxTextSize="30sp"
+            app:autoSizeMinTextSize="10sp"
+            app:autoSizeTextType="uniform"/>
+
+    </androidx.cardview.widget.CardView>
+
+
+  <androidx.recyclerview.widget.RecyclerView
+      android:id="@+id/recycler_phonetic"
+      android:layout_width="match_parent"
+      android:layout_below="@id/appBar"
+      android:layout_height="match_parent">
+
+  </androidx.recyclerview.widget.RecyclerView>
+
+</RelativeLayout>

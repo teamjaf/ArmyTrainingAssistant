@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_bg_2"
+    tools:context=".layouts.SplashScreeen">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:paddingStart="5dp"
+        android:paddingEnd="5dp"
+        android:layout_centerInParent="true"
+        android:layout_height="match_parent">
+
+
+        <TextView
+            android:layout_width="match_parent"
+             android:fontFamily="@font/black_ops_one"
+            android:text="BASIC TRAINING PREP"
+            android:textColor="@color/white"
+            android:padding="5dp"
+            app:autoSizeMaxTextSize="30sp"
+            android:textAlignment="center"
+            app:autoSizeMinTextSize="10sp"
+            app:autoSizeTextType="uniform"
+            android:layout_height="45dp"
+              />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:fontFamily="@font/poppins_light"
+            android:text="YOUR JOURNEY BEGINS" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

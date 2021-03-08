@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@android:color/white"
+    android:layout_height="match_parent"
+    tools:context=".layouts.MainActivity">
+
+    <ScrollView
+        android:id="@+id/scroll"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:paddingBottom="20dp"
+
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:padding="5dp"
+                android:gravity="center"
+                android:layout_marginTop="40dp"
+                android:fontFamily="@font/black_ops_one"
+                android:text="BASIC TRAINING PREP"
+                android:textColor="@color/black_dark"
+                app:autoSizeMaxTextSize="40sp"
+                app:autoSizeMinTextSize="12sp"
+                app:autoSizeTextType="uniform"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                app:autoSizeMaxTextSize="30sp"
+                app:autoSizeMinTextSize="10sp"
+                app:autoSizeTextType="uniform"
+                android:gravity="center"
+                android:fontFamily="@font/poppins_light"
+                android:text="YOUR JOURNEY BEGINS" />
+
+
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_marginTop="40dp"
+                android:layout_height="150dp"
+                 android:adjustViewBounds="true"
+                android:src="@drawable/solider_logo" />
+
+            <Button
+                android:onClick="btnLogin"
+                android:layout_marginTop="50dp"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginStart="50dp"
+                android:layout_marginEnd="50dp"
+                android:background="@drawable/btn_shape"
+                android:fontFamily="@font/poppins_medium"
+                android:text="LOGIN"
+                android:padding="6dp"
+                android:textColor="@color/black_dark2"
+                app:autoSizeMaxTextSize="30sp"
+                app:autoSizeMinTextSize="10sp"
+                app:autoSizeTextType="uniform" />
+
+            <Button
+                android:onClick="btnSignUp"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="50dp"
+                android:padding="6dp"
+                android:background="@drawable/btn_shape"
+                android:fontFamily="@font/poppins_medium"
+                android:text="SIGN UP"
+                android:textColor="@color/black_dark2"
+                app:autoSizeMaxTextSize="30sp"
+                app:autoSizeMinTextSize="10sp"
+                app:autoSizeTextType="uniform"
+                />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="50dp"
+                android:background="@drawable/btn_shape"
+                android:fontFamily="@font/poppins_medium"
+                android:padding="7dp"
+                android:text="Visit our Facebook Page"
+                android:textColor="@color/black_dark2"
+                app:autoSizeMaxTextSize="30sp"
+                app:autoSizeMinTextSize="10sp"
+                app:autoSizeTextType="uniform"
+
+                />
+
+            <TextView
+                android:id="@+id/txt"
+                android:layout_width="match_parent"
+                android:layout_height="22dp"
+                android:layout_marginTop="60dp"
+                android:gravity="center"
+                android:fontFamily="@font/poppins_light"
+                app:autoSizeMaxTextSize="30sp"
+                app:autoSizeMinTextSize="10sp"
+                app:autoSizeTextType="uniform"
+                android:text="By signing up, you agree with the Term of "
+                android:textColor="@color/black_dark2" />
+
+            <TextView
+                android:id="@+id/txt_servicePolicy"
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:layout_height="22dp"
+                android:fontFamily="@font/poppins_medium"
+                android:text="Services and Privacy Policy "
+                android:textColor="@color/blue1"
+                app:autoSizeMaxTextSize="30sp"
+                app:autoSizeMinTextSize="10sp"
+                app:autoSizeTextType="uniform"
+                />
+
+            <TextView
+                android:id="@+id/txt_ContactUs"
+                 android:layout_marginTop="10dp"
+                android:layout_width="140dp"
+                android:layout_height="22dp"
+                app:autoSizeMaxTextSize="30sp"
+                app:autoSizeMinTextSize="10sp"
+                app:autoSizeTextType="uniform"
+                android:gravity="center"
+                android:fontFamily="@font/poppins_medium"
+                android:text="Contact Support "
+                android:drawableEnd="@drawable/ic_forward_arrow"
+                android:textColor="@color/black_dark2"
+                />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</RelativeLayout>

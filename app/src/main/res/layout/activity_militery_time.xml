@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".layouts.Recruit.MiliteryTime">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/appBar"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        app:cardElevation="5dp"
+        app:cardBackgroundColor="@color/green2"
+        app:cardCornerRadius="0dp"
+        app:contentPadding="12sp">
+
+        <ImageButton
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="10dp"
+            android:background="@android:color/transparent"
+            android:onClick="btn_back"
+            android:src="@drawable/ic_back" />
+
+        <TextView
+            android:id="@+id/txt_screenName"
+            android:layout_width="180dp"
+            android:gravity="center"
+            android:layout_height="30sp"
+            android:layout_gravity="center"
+            android:fontFamily="@font/poppins_bold"
+            android:text="Military Time"
+            android:textColor="@android:color/white"
+            app:autoSizeMaxTextSize="30sp"
+            app:autoSizeMinTextSize="10sp"
+            app:autoSizeTextType="uniform" />
+
+    </androidx.cardview.widget.CardView>
+
+
+    <TextView
+        android:id="@+id/txt_militaryTime"
+        android:layout_centerInParent="true"
+        android:text="4123"
+        android:gravity="center"
+        app:autoSizeMaxTextSize="70sp"
+        app:autoSizeMinTextSize="10sp"
+        app:autoSizeTextType="uniform"
+         android:fontFamily="@font/poppins_bold"
+        android:textColor="@color/black_dark2"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"/>
+
+</RelativeLayout>
